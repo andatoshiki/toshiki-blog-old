@@ -1,0 +1,7 @@
+socials = [
+  { href = "https://github.com/ashao0425", target="_blank", icon = "github", title = "GitHub" },
+  # { href = "https://stackoverflow.com/users/5676489/g1eny0ung", target="_blank", icon = "stack overflow", title = "stack overflow" },
+  # { href = "https://codepen.io/g1eny0ung", target="_blank", icon = "codepen", title = "Codepen" },
+  { href = "http://wpa.qq.com/msgrd?v=3&uin=1959796501&site=qq&menu=yes", target="_blank", icon = "qq", title = "QQ" },
+  
+]
