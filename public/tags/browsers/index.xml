@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Browsers on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/tags/browsers/</link>
+    <description>Recent content in Browsers on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sun, 26 Sep 2021 03:36:36 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Tutorial) Download Pornhub Videos with Violentmonkey 😏</title>
+      <link>https://toshikis-miscellany.xyz/posts/pornhub-download/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/pornhub-download/</guid>
+      <description>&lt;p&gt;&lt;em&gt;You must had the experience of watching Pornhub without logging in, and you SUDDENLY see a good video that fits you, but just next time you can&amp;rsquo;t find it, the fast yet useful solution to this is to download the video at once. No more to say, you use Pornhub, we buddies 😏.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Random Variable and Expectation_</title>
+      <link>https://toshikis-miscellany.xyz/posts/algorithm/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/algorithm/</guid>
+      <description>Discrete Random Variables and Expectations Start off with an example, using the most normal element we would use in fundamental probability to explain combinations and outcomes in an event, two die. With this two dice we will have 36 possible outcomes. Let $(a, b)$ denote a possible outcome of rolling the two die, with the number on the top of the first die and b the number on the top of the second die.</description>
+    </item>
+    
+  </channel>
+</rss>

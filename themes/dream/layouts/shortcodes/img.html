@@ -1,0 +1,24 @@
+{{ $path := .Get "src" }}
+{{ $caption := .Get "title" }}
+{{ $size := .Get "width"}}
+<div class="fancybox" align="center">
+    <a data-fancybox="gallery" href="{{ $path | absURL }}" data-caption="{{ $caption }}"  width="{{ $size }}">
+        <img src="{{ $path | absURL }}" data-caption="{{ $caption }}" width="{{ $size }}"/>
+    </a>
+{{ if .Get "caption"}}
+    <figcaption>◎ {{ .Get "caption" }}</figcaption>
+{{ end }}
+</div>
+<style>
+    .fancybox figcaption{
+        color: #777;
+        font-size: 0.8em;
+    }
+    .fancybox img{
+        border-radius: 5%;
+        filter:drop-shadow(5px 5px 10px black)
+    }
+    body.dark .fancybox img{
+        filter:drop-shadow(5px 5px 10px white)
+    }
+</style>

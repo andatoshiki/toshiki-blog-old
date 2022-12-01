@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/posts/</link>
+    <description>Recent content in Posts on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 18 Oct 2021 09:22:23 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Tutorial) Build Free Image Host Using Github&#43;Picgo&#43;JsDelivr</title>
+      <link>https://toshikis-miscellany.xyz/posts/github-picgo-jsdelivr/</link>
+      <pubDate>Mon, 18 Oct 2021 09:22:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/github-picgo-jsdelivr/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Build a free image or video host by using GitHub+Picgo, and JsDelivr for acceleration, remember, completely free! (白嫖)&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(Tutorial) Download Pornhub Videos with Violentmonkey 😏</title>
+      <link>https://toshikis-miscellany.xyz/posts/pornhub-download/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/pornhub-download/</guid>
+      <description>&lt;p&gt;&lt;em&gt;You must had the experience of watching Pornhub without logging in, and you SUDDENLY see a good video that fits you, but just next time you can&amp;rsquo;t find it, the fast yet useful solution to this is to download the video at once. No more to say, you use Pornhub, we buddies 😏.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Random Variable and Expectation_</title>
+      <link>https://toshikis-miscellany.xyz/posts/algorithm/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/algorithm/</guid>
+      <description>Discrete Random Variables and Expectations Start off with an example, using the most normal element we would use in fundamental probability to explain combinations and outcomes in an event, two die. With this two dice we will have 36 possible outcomes. Let $(a, b)$ denote a possible outcome of rolling the two die, with the number on the top of the first die and b the number on the top of the second die.</description>
+    </item>
+    
+    <item>
+      <title>(Github) Setting up SSH key on GitHub</title>
+      <link>https://toshikis-miscellany.xyz/posts/github&#43;ssh-key/</link>
+      <pubDate>Tue, 07 Sep 2021 10:22:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/github&#43;ssh-key/</guid>
+      <description>&lt;p&gt;&lt;em&gt;By setting up SSH keys on github, it svaes the time on coding from typing in usernames and passwords for pushing projects to repos! 😎&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(Website) The best way of integrating MathJax Js in to Hugo for LaTeX math typing</title>
+      <link>https://toshikis-miscellany.xyz/posts/mathjax-support/</link>
+      <pubDate>Sun, 05 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/mathjax-support/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Using MathJax on Hugo has always been a huge problem from framework to inline math, this article will give you the clearest solution for integrating MathJax Js into Hugo based blog sites&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(Website) Hugo Blog Mouse Clicking Effects</title>
+      <link>https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/</link>
+      <pubDate>Sun, 05 Sep 2021 04:24:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others.&lt;/em&gt; 😏&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(Calculus) Centers of Gravity Using Multiple Integrals</title>
+      <link>https://toshikis-miscellany.xyz/posts/centers-of-gravity-using-multiple-integrals/</link>
+      <pubDate>Sun, 05 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/centers-of-gravity-using-multiple-integrals/</guid>
+      <description>&lt;p&gt;&lt;em&gt;In this section we will show how double and triple integrals can be used to find the mass and center of gravity of inhomogeneous laminas and three-dimensional solids.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Catch the Cat Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/catch-the-cat-demo/</link>
+      <pubDate>Sun, 05 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/catch-the-cat-demo/</guid>
+      <description>&lt;p&gt;Catch the Cat Game Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Test Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/test-feature-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 13:00:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/test-feature-demo/</guid>
+      <description>&lt;p&gt;For testing new features&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML Runner Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/html-runner-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/html-runner-demo/</guid>
+      <description>&lt;p&gt;Html Runner Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Donut C JS Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/donutc-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/donutc-demo/</guid>
+      <description>&lt;p&gt;Donut C in Js Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Function-Plot</title>
+      <link>https://toshikis-miscellany.xyz/posts/function-plot/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/function-plot/</guid>
+      <description>/* jshint esversion: 6 */function plot() {functionPlot({target: &#34;#root&#34;,width: $(&#39;#root&#39;).width(),height: $(&#39;#root&#39;).width() / 1.77,yAxis: {domain: [-5, 5]},tip: {renderer: function () {}},grid: true,data: [{fn: &#34;x^2&#34;,derivative: {fn: &#34;2 * x&#34;,updateOnMouseMove: true}},{fn: &#34;sin(x)&#34;,},{fn: &#34;x - 1/6 * x^3&#34;,}]});}$(document).ready(function () {plot();});$(window).resize(function () {plot();});  </description>
+    </item>
+    
+    <item>
+      <title>Slid Recaptcha Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/slide-recaptcha-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/slide-recaptcha-demo/</guid>
+      <description>&lt;p&gt;Slide recaptcha Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spinning Earth with Css Only</title>
+      <link>https://toshikis-miscellany.xyz/posts/sipnning-earth-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/sipnning-earth-demo/</guid>
+      <description>&lt;p&gt;Spinning Earth with plain Css.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://toshikis-miscellany.xyz/posts/build-todo-app/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/build-todo-app/</guid>
+      <description>&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- Content Type Meta tag --&amp;gt; &amp;lt;meta http-equiv=&amp;#34;Content-Type&amp;#34; content=&amp;#34;text/html; charset=UTF-8&amp;#34;&amp;gt; &amp;lt;!--Responsive Viewport Meta tag--&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1, user-scalable=no&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Todo list app&amp;lt;/title&amp;gt; &amp;lt;!-- Roboto font embed --&amp;gt; &amp;lt;link href=&amp;#34;https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;#34; rel=&amp;#34;stylesheet&amp;#34;&amp;gt; &amp;lt;!-- Stylesheets --&amp;gt; &amp;lt;style&amp;gt; html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline } article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block } body, html { width: 100%; height: 100% } body { -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: none; margin: 0; padding: 0; font-family: &amp;#34;Helvetica Neue&amp;#34;, Helvetica, Arial, sans-serif } ol, ul { list-style: none } hr { border: 0; height: 1px; background: #ccc } blockquote, q { quotes: none } blockquote:before, blockquote:after, q:before, q:after { content: &amp;#39;&amp;#39;; content: none } table { border-collapse: collapse; border-spacing: 0 } * { margin: 0; padding: 0; list-style: none; box-sizing: border-box } html, input, select, textarea, button, a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0) } &amp;lt;/style&amp;gt; &amp;lt;style&amp;gt; @charset &amp;#34;UTF-8&amp;#34;; body { background: #edf0f1; padding: 80px 0 0 0; } body, input, button { font-family: &amp;#39;Roboto&amp;#39;, sans-serif; } .</description>
+    </item>
+    
+  </channel>
+</rss>

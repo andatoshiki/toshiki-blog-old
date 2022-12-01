@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>(Website) Hugo Blog Mouse Clicking Effects | 俊樹&#39;s Miscellaneous</title>
+
+    
+<link href="/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+<meta name="author" content="安田俊樹" />
+<meta name="description" content="Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others. 😏
+" />
+
+
+
+<meta name="generator" content="Hugo 0.81.0" />
+
+<link rel="canonical" href="https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/" />
+
+
+<meta property="og:title" content="(Website) Hugo Blog Mouse Clicking Effects" />
+<meta property="og:description" content="Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others. 😏" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/" /><meta property="og:image" content="https://toshikis-miscellany.xyz/post2/cover2.png" /><meta property="og:image" content="https://toshikis-miscellany.xyz/post2/cover2.png" /><meta property="og:image" content="https://toshikis-miscellany.xyz/post2/cover2.png" /><meta property="og:image" content="https://toshikis-miscellany.xyz/post2/cover2.png" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-05T04:24:23&#43;08:00" />
+<meta property="article:modified_time" content="2021-09-05T04:24:23&#43;08:00" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://toshikis-miscellany.xyz/post2/cover2.png"/>
+
+<meta name="twitter:title" content="(Website) Hugo Blog Mouse Clicking Effects"/>
+<meta name="twitter:description" content="Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others. 😏"/>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="/css/site.css" />
+
+<style>
+  .ui.header a:not(.item, .ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.item, .ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.item, .ui.button) {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: ZgotmplZ;
+    
+
+    
+    background-image: url(/background/back1.jpg);
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: ZgotmplZ;
+    
+
+    
+    background-image: url(/background/BackgroundBlack.jpg);
+    
+  }
+  
+</style>
+
+
+<script>
+  document.addEventListener('visibilitychange',function(){
+      if( document.visibilityState == 'hidden' ){
+      normal_title = document.title;
+      document.title = 'w(ﾟДﾟ)w Ugh, site crashed！';
+      }else{
+      document.title = '(/▽＼) Yay, Site got fixed！';
+      setTimeout(function(){
+          document.title = normal_title;
+      }, 1200)
+      }
+  });
+</script>
+
+
+
+    
+
+
+
+<link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/tomorrow.min.css" />
+
+
+
+
+<script src='/js/Valine.min.js'></script>
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    
+    <meta name="referrer" content="never">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <link  href="/css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="/js/jquery.fancybox.min.js"></script>
+    
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+          caption: function (fancybox, carousel, slide) {
+            return (
+              `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+            );
+          },
+        });
+  </script>
+	
+    <link rel="stylesheet" href="/live2d/css/live2d.css" />
+
+  
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <link rel="stylesheet" href="/css/APlayer.dark.min.css">
+  
+    <script src="/js/APlayer.min.js"></script>
+  
+    <script src="/js/Meting.min.js"></script>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+  
+    <script src="/js/d3.min.js"></script>
+  
+    <script src="/js/function-plot.js"></script>
+  
+  
+    <link rel="stylesheet" href="/css/style.css">
+  
+  
+    <script src="/js/quizdown/quizdown.js"></script>
+    <script src="/js/quizdown/quizdownKatex.js"></script>
+    <script src="/js/quizdown/quizdownHighlight.js"></script>
+    <script>
+      quizdown.register(quizdownHighlight).register(quizdownKatex).init()
+    </script>
+
+  
+    <script src="/js/activate-power-mode.js"></script>
+    <script>
+      POWERMODE.colorful = true; 
+      POWERMODE.shake = false; 
+      document.body.addEventListener('input', POWERMODE);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu dream-nav">
+
+  <a class="item dream-flip-toggle" title="Flip it!">
+    <i class="large link bullseye icon"></i>
+  </a>
+  <a class="item" href="https://toshikis-miscellany.xyz/" title="Home">
+    <i class="large link home icon"></i>
+  </a>
+  
+  <a class="item" onclick="themeSwitch(event)">
+    <i class="large link icon theme-switch"></i>
+  </a>
+  
+  
+  <a class="item" title="Search something? (*￣3￣)╭ Press esc to exit" onclick="toggleSearch(event)">
+    <i class="large link search icon"></i>
+  </a>
+  <a class="item" href="/game/game.html" title="Game">
+    <i class="large link icon game"></i>
+  </a>
+  <a class="item" href="/game/game2.html" title="Game">
+    <i class="large link icon fire"></i>
+  </a>
+  <a class="item" href="/friends/" title="Friend links">
+    <i class="large link icon user"></i>
+  </a>
+  <a class="item" href="http://toshikis-miscellany.xyz/" title="Friend links">
+    <i class="large link icon heart"></i>
+  </a>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed centered grid dream-grid dream-grid-single">
+  
+  
+  
+  
+
+  
+  <aside class="sixteen wide mobile sixteen wide tablet three wide computer column dream-single-aside">
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#procedures">Procedures</a></li>
+    <li><a href="#effect-choices">Effect Choices</a>
+      <ul>
+        <li><a href="#random-colored-heart-effect">Random colored heart effect</a></li>
+        <li><a href="#core-socialist-values-社會主義核心價值觀-effect">Core socialist values (社會主義核心價值觀) effect</a></li>
+        <li><a href="#strings-encircles-effect-i-dont-know-how-to-give-a-name-for-this-">Strings Encircles Effect??? (I don&rsquo;t know how to give a name for this&hellip; 💩)</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+
+    
+  </aside>
+  
+  <div class="sixteen wide mobile sixteen wide tablet ten wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">(Website) Hugo Blog Mouse Clicking Effects<span class="sub header">
+            <span class="left">
+              @
+              
+                
+                  安田俊樹
+                
+              
+
+              | 
+                  <span data-format="luxon">2021-09-05T04:24:23&#43;08:00</span>
+                
+
+              | 6 minutes read
+
+              
+              | Update at
+                
+                  <span data-format="luxon">2021-09-05T04:24:23&#43;08:00</span>
+                
+              
+            </span>
+
+            
+            <span class="dream-share">
+  <a href="#" class="save-as-image" title="Save as image" onclick="savePostAsImg()">
+    <i class="save icon"></i>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=%28Website%29%20Hugo%20Blog%20Mouse%20Clicking%20Effects&url=https%3a%2f%2ftoshikis-miscellany.xyz%2fposts%2fhugo-blog-mouse-clicking-effect%2f" title="Twitter">
+    <i class="twitter icon"></i>
+  </a>
+  <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2ftoshikis-miscellany.xyz%2fposts%2fhugo-blog-mouse-clicking-effect%2f" title="Facebook">
+    <i class="facebook icon"></i>
+  </a>
+</span>
+
+            
+          </span>
+        </h1>
+      </header>
+
+      <article class="main">
+        
+        <img class="cover" src="/post2/cover2.png" />
+        
+
+        <p><em>Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others.</em> 😏</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=431259256&auto=0&height=66"></iframe>
+<h2 id="introduction">Introduction</h2>
+<p>You must had the experience of clicking on a webpage then a bunch of effects pop out from the top of the cursors, this must be fun (a more direct explanation using gif is shown below, sorry for my broken English😭), this is also the <strong>first time</strong> I successfully integrated clicking effect into my own blog site, it works as a tutorial to people who still don&rsquo;t know how to do it, and a memo if I forgot in later days. <strong>I&rsquo;m not a html dev, I can&rsquo;t tell what language the effect is using, but you need put them in a html file.</strong> 😊
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <img class="mx-auto" alt="" src="/post2/mouse.gif" />   
+    </p>
+<p><em>(Well this is the gif, by clicking on the webpage random things pops out based on your design)</em></p>
+<p>I checked out a lot of tutorials online, but none of them were specific, just prividing the code blocks but cliche procedures, I&rsquo;ll show you how to intgrate mouse-clicking effect to hugo <strong>(other blog as well, they are mostly the same but I haven&rsquo;t tried)</strong>.</p>
+<h2 id="procedures">Procedures</h2>
+<p>Usually， you can find they main moduel file in <code>_includes</code> or <code>_layout</code> folder in your site theme directory based on your static site generator, for my situation is Hugo.</p>
+<ul>
+<li>Open <code>baseof.html</code> document under <code>themes/&lt;your-theme&gt;/layout/_default/baseof.html</code>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <img class="mx-auto" alt="" src="/post2/file.png" />   
+    </li>
+<li>Find either <code>&lt;head&gt;</code> tag or <code>&lt;body&gt;</code> tag, content in those two tags are the main content layout of your site.</li>
+<li>Scroll down and find <code>&lt;/body&gt;</code> tag that corresponds to the <code>&lt;body&gt;</code> tag.</li>
+<li>Copy the code, and paste it either a line above the <code>&lt;/body&gt;</code> tag or below it.</li>
+</ul>
+<h2 id="effect-choices">Effect Choices</h2>
+<p>Following codes allows you to choose effects you want.</p>
+<h3 id="random-colored-heart-effect">Random colored heart effect</h3>
+<blockquote>
+<p>Heart emojis pops out from your cursor when you click on webpages then fades away in about 0.7 seconds, you are able to change the size, time, colors to your actual need.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;
+		(<span style="color:#66d9ef">function</span>(window,document,<span style="color:#66d9ef">undefined</span>){
+			<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">hearts</span> <span style="color:#f92672">=</span> [];
+			window.<span style="color:#a6e22e">requestAnimationFrame</span> <span style="color:#f92672">=</span> (<span style="color:#66d9ef">function</span>(){
+				<span style="color:#66d9ef">return</span> window.<span style="color:#a6e22e">requestAnimationFrame</span> <span style="color:#f92672">||</span>
+				window.<span style="color:#a6e22e">webkitRequestAnimationFrame</span> <span style="color:#f92672">||</span>
+				window.<span style="color:#a6e22e">mozRequestAnimationFrame</span> <span style="color:#f92672">||</span>
+				window.<span style="color:#a6e22e">oRequestAnimationFrame</span> <span style="color:#f92672">||</span>
+				window.<span style="color:#a6e22e">msRequestAnimationFrame</span> <span style="color:#f92672">||</span>
+				<span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">callback</span>){
+					<span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">callback</span>,<span style="color:#ae81ff">1000</span><span style="color:#f92672">/</span><span style="color:#ae81ff">60</span>);
+				}
+			})();
+			<span style="color:#a6e22e">init</span>();
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">init</span>(){
+				<span style="color:#a6e22e">css</span>(<span style="color:#e6db74">&#34;.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: &#39;&#39;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}&#34;</span>);
+				<span style="color:#a6e22e">attachEvent</span>();
+				<span style="color:#a6e22e">gameloop</span>();
+			}
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">gameloop</span>(){
+				<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">hearts</span>.<span style="color:#a6e22e">length</span>;<span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>){
+					<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">alpha</span> <span style="color:#f92672">&lt;=</span><span style="color:#ae81ff">0</span>){
+						document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">removeChild</span>(<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">el</span>);
+						<span style="color:#a6e22e">hearts</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">i</span>,<span style="color:#ae81ff">1</span>);
+						<span style="color:#66d9ef">continue</span>;
+					}
+					<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">y</span><span style="color:#f92672">--</span>;
+					<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">scale</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">0.004</span>;
+					<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">alpha</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.013</span>;
+					<span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">el</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">cssText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;left:&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">x</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px;top:&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">y</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;px;opacity:&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">alpha</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;;transform:scale(&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">scale</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">scale</span><span style="color:#f92672">+</span><span style="color:#e6db74">&#34;) rotate(45deg);background:&#34;</span><span style="color:#f92672">+</span><span style="color:#a6e22e">hearts</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">color</span>;
+				}
+				<span style="color:#a6e22e">requestAnimationFrame</span>(<span style="color:#a6e22e">gameloop</span>);
+			}
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">attachEvent</span>(){
+				<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">old</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">typeof</span> window.<span style="color:#a6e22e">οnclick</span><span style="color:#f92672">===</span><span style="color:#e6db74">&#34;function&#34;</span> <span style="color:#f92672">&amp;&amp;</span> window.<span style="color:#a6e22e">onclick</span>;
+				window.<span style="color:#a6e22e">onclick</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">event</span>){
+					<span style="color:#a6e22e">old</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">old</span>();
+					<span style="color:#a6e22e">createHeart</span>(<span style="color:#a6e22e">event</span>);
+				}
+			}
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">createHeart</span>(<span style="color:#a6e22e">event</span>){
+				<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;div&#34;</span>);
+				<span style="color:#a6e22e">d</span>.<span style="color:#a6e22e">className</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;heart&#34;</span>;
+				<span style="color:#a6e22e">hearts</span>.<span style="color:#a6e22e">push</span>({
+					<span style="color:#a6e22e">el</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">d</span>,
+					<span style="color:#a6e22e">x</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientX</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>,
+					<span style="color:#a6e22e">y</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">clientY</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>,
+					<span style="color:#a6e22e">scale</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+					<span style="color:#a6e22e">alpha</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
+					<span style="color:#a6e22e">color</span> <span style="color:#f92672">:</span> <span style="color:#a6e22e">randomColor</span>()
+				});
+				document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">d</span>);
+			}
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">css</span>(<span style="color:#a6e22e">css</span>){
+				<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">style</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;style&#34;</span>);
+				<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css&#34;</span>;
+				<span style="color:#66d9ef">try</span>{
+					<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">appendChild</span>(document.<span style="color:#a6e22e">createTextNode</span>(<span style="color:#a6e22e">css</span>));
+				}<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">ex</span>){
+					<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">styleSheet</span>.<span style="color:#a6e22e">cssText</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">css</span>;
+				}
+				document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#e6db74">&#39;head&#39;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">style</span>);
+			}
+			<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">randomColor</span>(){
+				<span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;rgb(&#34;</span><span style="color:#f92672">+</span>(<span style="color:#f92672">~~</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">255</span>))<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">+</span>(<span style="color:#f92672">~~</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">255</span>))<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">+</span>(<span style="color:#f92672">~~</span>(Math.<span style="color:#a6e22e">random</span>()<span style="color:#f92672">*</span><span style="color:#ae81ff">255</span>))<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;)&#34;</span>;
+			}
+		})(window,document);
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><h3 id="core-socialist-values-社會主義核心價值觀-effect">Core socialist values (社會主義核心價值觀) effect</h3>
+<blockquote>
+<p>Core socialist values: 富强、民主、文明、和谐、自由、平等、公正、法治、爱国、敬业、诚信、友善 in Chiese pops out from your cursor. This effect introduces a jaquery javascript from a cdn of bootcss, it might not work when internet speed is down, you can also changes the string text inside of the core values between the quotation marks below.</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+        <span style="color:#75715e">/* 鼠标点击特效 - 7Core.CN */</span>
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;<span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">$</span>) {<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array(<span style="color:#e6db74">&#34;富强&#34;</span>, <span style="color:#e6db74">&#34;民主&#34;</span>, <span style="color:#e6db74">&#34;文明&#34;</span>, <span style="color:#e6db74">&#34;和谐&#34;</span>, <span style="color:#e6db74">&#34;自由&#34;</span>, <span style="color:#e6db74">&#34;平等&#34;</span>, <span style="color:#e6db74">&#34;公正&#34;</span> ,<span style="color:#e6db74">&#34;法治&#34;</span>, <span style="color:#e6db74">&#34;爱国&#34;</span>, <span style="color:#e6db74">&#34;敬业&#34;</span>, <span style="color:#e6db74">&#34;诚信&#34;</span>, <span style="color:#e6db74">&#34;友善&#34;</span>);<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">$i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;span/&gt;&#34;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">a_idx</span>]);
+        <span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">length</span>;<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">pageX</span>,<span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">pageY</span>;<span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">css</span>({<span style="color:#e6db74">&#34;z-index&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100000000</span>,<span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span>,<span style="color:#e6db74">&#34;left&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">x</span>,<span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;absolute&#34;</span>,<span style="color:#e6db74">&#34;font-weight&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;bold&#34;</span>,<span style="color:#e6db74">&#34;color&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;#ff6651&#34;</span>});<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#a6e22e">$i</span>);<span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">animate</span>({<span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">180</span>,<span style="color:#e6db74">&#34;opacity&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>},<span style="color:#ae81ff">1500</span>,<span style="color:#66d9ef">function</span>() {<span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">remove</span>();});});});
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>or this (The one I&rsquo;m using)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span>&gt;
+    <span style="color:#75715e">/* 鼠标特效 */</span>
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+    <span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">$</span>) {
+        <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">click</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">e</span>) {
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Array(<span style="color:#e6db74">&#34;😁&#34;</span>,<span style="color:#e6db74">&#34;😜&#34;</span>,<span style="color:#e6db74">&#34;😋&#34;</span>,<span style="color:#e6db74">&#34;😀&#34;</span>,<span style="color:#e6db74">&#34;😂&#34;</span>,<span style="color:#e6db74">&#34;😉&#34;</span>,<span style="color:#e6db74">&#34;😄&#34;</span>,<span style="color:#e6db74">&#34;🤤&#34;</span>,<span style="color:#e6db74">&#34;🤣&#34;</span>,<span style="color:#e6db74">&#34;😝&#34;</span>,<span style="color:#e6db74">&#34;😛&#34;</span>,<span style="color:#e6db74">&#34;😏&#34;</span>);
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">$i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;span&gt;&lt;/span&gt;&#34;</span>).<span style="color:#a6e22e">text</span>(<span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">a_idx</span>]);
+            <span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a_idx</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">length</span>;
+            <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">pageX</span>,
+            <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">pageY</span>;
+            <span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">css</span>({
+                <span style="color:#e6db74">&#34;z-index&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">999999999999999999999999999999999999999999999999999999999999999999999</span>,
+                <span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">20</span>,
+                <span style="color:#e6db74">&#34;left&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">x</span>,
+                <span style="color:#e6db74">&#34;position&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;absolute&#34;</span>,
+                <span style="color:#e6db74">&#34;font-weight&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;bold&#34;</span>,
+                <span style="color:#e6db74">&#34;color&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;rgb(&#34;</span><span style="color:#f92672">+~~</span>(<span style="color:#ae81ff">255</span><span style="color:#f92672">*</span>Math.<span style="color:#a6e22e">random</span>())<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">+~~</span>(<span style="color:#ae81ff">255</span><span style="color:#f92672">*</span>Math.<span style="color:#a6e22e">random</span>())<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">+~~</span>(<span style="color:#ae81ff">255</span><span style="color:#f92672">*</span>Math.<span style="color:#a6e22e">random</span>())<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;)&#34;</span>
+            });
+            <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;body&#34;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#a6e22e">$i</span>);
+            <span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">animate</span>({
+                <span style="color:#e6db74">&#34;top&#34;</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">180</span>,
+                <span style="color:#e6db74">&#34;opacity&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">0</span>
+            },
+            <span style="color:#ae81ff">1500</span>,
+            <span style="color:#66d9ef">function</span>() {
+                <span style="color:#a6e22e">$i</span>.<span style="color:#a6e22e">remove</span>();
+            });
+        });
+    });
+    &lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><blockquote>
+<p><strike>This is the effect I used on my blog site, emojis pops out. 😁</strike></p>
+</blockquote>
+<h3 id="strings-encircles-effect-i-dont-know-how-to-give-a-name-for-this-">Strings Encircles Effect??? (I don&rsquo;t know how to give a name for this&hellip; 💩)</h3>
+<blockquote>
+<p>This effect creates segements scatters at the background of your webpage, it somehow connects to the top of your cursor when you move the mouse, works better with a <strong>white</strong> wepage backgroud, some people might think it&rsquo;s cool, but I stay neutral. 😏</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span>&gt;
+<span style="color:#f92672">!</span> <span style="color:#66d9ef">function</span>() {
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">o</span>(<span style="color:#a6e22e">w</span>, <span style="color:#a6e22e">v</span>, <span style="color:#a6e22e">i</span>) {
+        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">getAttribute</span>(<span style="color:#a6e22e">v</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">i</span>
+    }
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">j</span>(<span style="color:#a6e22e">i</span>) {
+        <span style="color:#66d9ef">return</span> document.<span style="color:#a6e22e">getElementsByTagName</span>(<span style="color:#a6e22e">i</span>)
+    }
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">l</span>() {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">j</span>(<span style="color:#e6db74">&#34;script&#34;</span>),
+            <span style="color:#a6e22e">w</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">length</span>,
+            <span style="color:#a6e22e">v</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>[<span style="color:#a6e22e">w</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>];
+        <span style="color:#66d9ef">return</span> {
+            <span style="color:#a6e22e">l</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">w</span>,
+            <span style="color:#a6e22e">z</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">o</span>(<span style="color:#a6e22e">v</span>, <span style="color:#e6db74">&#34;zIndex&#34;</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>),
+            <span style="color:#a6e22e">o</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">o</span>(<span style="color:#a6e22e">v</span>, <span style="color:#e6db74">&#34;opacity&#34;</span>, <span style="color:#ae81ff">0.5</span>),
+            <span style="color:#a6e22e">c</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">o</span>(<span style="color:#a6e22e">v</span>, <span style="color:#e6db74">&#34;color&#34;</span>, <span style="color:#e6db74">&#34;0,0,0&#34;</span>),
+            <span style="color:#a6e22e">n</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">o</span>(<span style="color:#a6e22e">v</span>, <span style="color:#e6db74">&#34;count&#34;</span>, <span style="color:#ae81ff">99</span>)
+        }
+    }
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">k</span>() {
+        <span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">width</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">innerWidth</span> <span style="color:#f92672">||</span> document.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">clientWidth</span> <span style="color:#f92672">||</span> document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">clientWidth</span>, <span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">height</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">innerHeight</span> <span style="color:#f92672">||</span> document.<span style="color:#a6e22e">documentElement</span>.<span style="color:#a6e22e">clientHeight</span> <span style="color:#f92672">||</span> document.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">clientHeight</span>
+    }
+
+    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">b</span>() {
+        <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">clearRect</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">n</span>);
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">w</span> <span style="color:#f92672">=</span> [<span style="color:#a6e22e">f</span>].<span style="color:#a6e22e">concat</span>(<span style="color:#a6e22e">t</span>);
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">v</span>, <span style="color:#a6e22e">A</span>, <span style="color:#a6e22e">B</span>, <span style="color:#a6e22e">z</span>, <span style="color:#a6e22e">y</span>;
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">i</span>) {
+            <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">xa</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">ya</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">xa</span> <span style="color:#f92672">*=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">r</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">ya</span> <span style="color:#f92672">*=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">n</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">fillRect</span>(<span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>);
+            <span style="color:#66d9ef">for</span> (<span style="color:#a6e22e">v</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">v</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">v</span><span style="color:#f92672">++</span>) {
+                <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">w</span>[<span style="color:#a6e22e">v</span>];
+                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">i</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">!==</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">y</span>) {
+                    <span style="color:#a6e22e">B</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">y</span>, <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">B</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">B</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">z</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">z</span>;
+                    <span style="color:#a6e22e">y</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">max</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#a6e22e">x</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">f</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">max</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">&amp;&amp;</span> (<span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.03</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">B</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">-=</span> <span style="color:#ae81ff">0.03</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">z</span>), <span style="color:#a6e22e">A</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">max</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">y</span>) <span style="color:#f92672">/</span> <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">max</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">beginPath</span>(), <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">lineWidth</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">A</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">strokeStyle</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;rgba(&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">c</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;,&#34;</span> <span style="color:#f92672">+</span> (<span style="color:#a6e22e">A</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">0.2</span>) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;)&#34;</span>, <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">moveTo</span>(<span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">y</span>), <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">lineTo</span>(<span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">x</span>, <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">y</span>), <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">stroke</span>())
+                }
+            }
+            <span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">indexOf</span>(<span style="color:#a6e22e">i</span>), <span style="color:#ae81ff">1</span>)
+        }), <span style="color:#a6e22e">m</span>(<span style="color:#a6e22e">b</span>)
+    }
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">u</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">createElement</span>(<span style="color:#e6db74">&#34;canvas&#34;</span>),
+        <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">l</span>(),
+        <span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;c_n&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">l</span>,
+        <span style="color:#a6e22e">e</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">getContext</span>(<span style="color:#e6db74">&#34;2d&#34;</span>),
+        <span style="color:#a6e22e">r</span>, <span style="color:#a6e22e">n</span>, <span style="color:#a6e22e">m</span> <span style="color:#f92672">=</span> window.<span style="color:#a6e22e">requestAnimationFrame</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">webkitRequestAnimationFrame</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">mozRequestAnimationFrame</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">oRequestAnimationFrame</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">msRequestAnimationFrame</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">i</span>) {
+            window.<span style="color:#a6e22e">setTimeout</span>(<span style="color:#a6e22e">i</span>, <span style="color:#ae81ff">1000</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">45</span>)
+        },
+        <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">random</span>,
+        <span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> {
+            <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+            <span style="color:#a6e22e">y</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">null</span>,
+            <span style="color:#a6e22e">max</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20000</span>
+        };
+    <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">c</span>;
+    <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">className</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hidden-xs hidden-sm my_canvas&#34;</span>;
+    <span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">style</span>.<span style="color:#a6e22e">cssText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;position:fixed;top:0;left:0;z-index:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">z</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;;opacity:&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">o</span>;
+    <span style="color:#a6e22e">j</span>(<span style="color:#e6db74">&#34;body&#34;</span>)[<span style="color:#ae81ff">0</span>].<span style="color:#a6e22e">appendChild</span>(<span style="color:#a6e22e">u</span>);
+    <span style="color:#a6e22e">k</span>(), window.<span style="color:#a6e22e">onresize</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">k</span>;
+    window.<span style="color:#a6e22e">onmousemove</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">i</span>) {
+        <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">||</span> window.<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">clientX</span>, <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">i</span>.<span style="color:#a6e22e">clientY</span>
+    }, window.<span style="color:#a6e22e">onmouseout</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>() {
+        <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>
+    };
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> [], <span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">n</span> <span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">p</span>; <span style="color:#a6e22e">p</span><span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">h</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>() <span style="color:#f92672">*</span> <span style="color:#a6e22e">r</span>,
+            <span style="color:#a6e22e">g</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>() <span style="color:#f92672">*</span> <span style="color:#a6e22e">n</span>,
+            <span style="color:#a6e22e">q</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">a</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>,
+            <span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">a</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>;
+        <span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">push</span>({
+            <span style="color:#a6e22e">x</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">h</span>,
+            <span style="color:#a6e22e">y</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">g</span>,
+            <span style="color:#a6e22e">xa</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">q</span>,
+            <span style="color:#a6e22e">ya</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">d</span>,
+            <span style="color:#a6e22e">max</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6000</span>
+        })
+    }
+    <span style="color:#a6e22e">setTimeout</span>(<span style="color:#66d9ef">function</span>() {
+        <span style="color:#a6e22e">b</span>()
+    }, <span style="color:#ae81ff">100</span>)
+}();
+&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Wish you have a good day! 😄</p>
+      </article>
+    </section>
+
+    
+
+    
+
+    
+    <article class="ui segment" data-html2canvas-ignore>
+      <div id="vcomments"></div>
+    </article>
+
+    <script>
+      new Valine({
+        el: '#vcomments',
+        appId: "mmsIvsDj8zvjpXmWqjS1DE0a-MdYXbMMI",
+        appKey: "SM2s2HytuJJzA4lKWcAVKGMG",
+        lang:  null 
+      })
+    </script>
+    
+  </div>
+</div>
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2020 - 2021 俊樹&#39;s Miscellaneous</p>
+              
+            
+            
+            <script type="text/javascript"> 
+              if(window.console) {
+	              var cons = console; 
+	              if(cons) { 
+		              cons.group("Hey hey hey👀！");
+		              cons.info("👋🏻Hi there, YES IT'S YOU, watching my source code yea?！I'm watching you🖕🏻 https://ashao0425.github.io/"); 
+		              cons.log("%c俊樹's Miscellaneous", "background-image: linear-gradient(#063053, #395873, #5c7c99);font-size: 2rem;");
+		              cons.info("==============================Splitting Line==============================");
+		              cons.log("  █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗\n▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝\n▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗\n░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║\n░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝\n ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝\n ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░\n ░ ░    ░░░ ░ ░ ░        ░ ░░ ░\n          ░     ░ ░      ░  ░\n")
+		              cons.groupEnd();
+	              } 
+              }
+              </script>
+              
+			        
+              <center>
+                <script async src="/js/busuanzi.pure.mini.js"></script>
+				        👀Site views: <span style="color:seagreen"><span id="busuanzi_value_site_pv"></span></span> times
+              </center>
+              
+			        
+              <center>
+                👶Site age: <SPAN id=span_dt_dt style="color: #2E8B57;"></SPAN>
+                <SCRIPT language=javascript>
+                function show_date_time(){
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay=new Date("9/5/2021 02:14:49");
+                today=new Date();
+                timeold=(today.getTime()-BirthDay.getTime());
+                sectimeold=timeold/1000
+                secondsold=Math.floor(sectimeold);
+                msPerDay=24*60*60*1000
+                e_daysold=timeold/msPerDay
+                daysold=Math.floor(e_daysold);
+                e_hrsold=(e_daysold-daysold)*24;
+                hrsold=Math.floor(e_hrsold);
+                e_minsold=(e_hrsold-hrsold)*60;
+                minsold=Math.floor((e_hrsold-hrsold)*60);
+                seconds=Math.floor((e_minsold-minsold)*60);
+                span_dt_dt.innerHTML=""+daysold+" "+"days"+" "+hrsold+" "+"hours"+" "+minsold+" "+"minutes"+" "+seconds+" "+"seconds";
+                }
+                show_date_time();
+                </SCRIPT>
+              </center>
+              
+              
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  
+  <div class="ui small circular image">
+    <img src="/avatar/Avatar3.jpg" alt="avatar" />
+  </div>
+  
+
+  
+
+  
+  
+  
+
+  <div class="content">
+    <h1 class="ui medium header">俊樹&#39;s Miscellaneous<span class="sub header"><div id="binft"></div><script>var binft=function(t){function r(){return f[Math.floor(Math.random()*f.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(t){for(var n=document.createDocumentFragment(),i=0;t>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=r(),n.appendChild(l)}return n}function i(){var r=a[c.skillI];c.step?c.step--:(c.step=o,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<r.length?(c.text+=r[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=g):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%a.length,c.direction="forward")),t.textContent=c.text,t.appendChild(n(c.prefixP<l.length?Math.min(b,b+c.prefixP):Math.min(b,r.length-c.skillP))),setTimeout(i,d)}var l="",a=["Lover of Mathematics and Science."].map(function(t){return t+""}),g=2,o=1,b=5,d=75,f=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-b,skillI:0,skillP:0,direction:"forward",delay:g,step:o};i()};binft(document.getElementById("binft"));</script></span>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="Archives"></i>
+      </a>
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+          <div class="dream-tags">
+          
+          
+          
+            <a class="ui label" href="/tags/bash/" title="Bash">
+              Bash
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/browsers/" title="Browsers">
+              Browsers
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/c/" title="C">
+              C
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/chrome/" title="Chrome">
+              Chrome
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/code/" title="Code">
+              Code
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/css/" title="Css">
+              Css
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/design/" title="Design">
+              Design
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/download/" title="Download">
+              Download
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/extension/" title="Extension">
+              Extension
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/game/" title="Game">
+              Game
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/git/" title="Git">
+              Git
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/github/" title="Github">
+              Github
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/gravity/" title="Gravity">
+              Gravity
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/html/" title="Html">
+              Html
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/hugo/" title="Hugo">
+              Hugo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/js/" title="Js">
+              Js
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/latex/" title="LaTeX">
+              LaTeX
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathematics/" title="Mathematics">
+              Mathematics
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathjax/" title="MathJax">
+              MathJax
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/picgo/" title="Picgo">
+              Picgo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/pornhub/" title="Pornhub">
+              Pornhub
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/ssh-key/" title="SSH Key">
+              SSH Key
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/tutorial/" title="Tutorial">
+              Tutorial
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/violentmonkey/" title="Violentmonkey">
+              Violentmonkey
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/website/" title="Website">
+              Website
+            </a>
+          
+          </div>
+    
+
+    
+  </div>
+
+  
+  <script src="/js/sweetalert.min.js"></script> 
+  <link rel="stylesheet" href="/css/sweetalert.css" type='text/css' media='all' />
+</header>
+
+<script>document.body.oncopy = function() {swal("Copied successfully！", "If you would you like to use this site, please attribute or indicate the source if authorized！","success");};</script>
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment markdown-body">
+      <div class="ui medium header">Bio 👋</div>
+      <ul>
+<li><strong>👨Names</strong>:
+<ul>
+<li>English: Alex Shao</li>
+<li>中文: 邵宪辉</li>
+<li>日本語：安田俊樹</li>
+</ul>
+</li>
+<li><strong>👀Age</strong>: 16, 2005/4/25</li>
+<li><strong>🏫School</strong>: SLAS (shittiest school ever)</li>
+<li><strong>❤️Interests</strong>: Python, Html, Java, Js, Anime(especially &ldquo;ダンジョンに出会いを求めるのは間違っているだろうか&rdquo;), Math, Science, Sleep, Diarreah &amp; Constipation (Well, I had stomache issue since I was born, innate), bikes</li>
+<li><strong>🚩Nationality</strong>: Chinese &amp; Japanese (Microsoft somehow does not support country flag emojis&hellip;)</li>
+<li><strong>💼Occupation</strong>: Student</li>
+<li><strong>📺Movies</strong>: No movies, animes only, &ldquo;ダンジョンに出会いを求めるのは間違っているだろうか&rdquo;</li>
+<li><strong>📫Email</strong>: <a href="mailto:alex2005@gmail.com">alex2005@gmail.com</a></li>
+<li><strong>👨‍🏫Values</strong>: Constrain impetuosity</li>
+<li><strong>🐧QQ</strong>: 1959796501 (Also contact my QQ besides mail)</li>
+<li><strong>💻Device</strong>: Huawei Matebook 14, 2019</li>
+<li><strong>🖱️IDE</strong>: VsCode</li>
+</ul>
+<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
+<div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice warning" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"></use></svg></span>Warning</p><p>This is a warning notice. Be warned!</p></div>
+
+
+    </article>
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment markdown-body">
+      <div class="ui medium header">Acknowledgments</div>
+      <ul>
+<li><strong>Vansh Kamleshbhai Padaliya</strong>: Always helping and assisting with no doubts and hesitations, good buddy, known for 3 years.</li>
+<li><strong>吴思萌 Mónica</strong>: An elder sister, always accompanying and encouraging, deskmate in previous school, known for 5 years.</li>
+<li><strong>姚轶膑</strong>: Great buddy as well, spent time screwing out often, always encouraging, known for 5 years.</li>
+<li><strong>Koki Kin</strong>: Typical Japanese Otaku, still a great buddy, known for 1.5 years, giving help when I need.</li>
+<li><strong>Semih Deli</strong>: Known since 2, developed this site together.</li>
+<li>All the others people who answered my requests I pulled on Github when I met problems.</li>
+</ul>
+
+    </article>
+  </div>
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <div class="ui medium header">Social Links</div>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <a class="item" href="/index.xml">
+    <i class="large rss square icon" title="RSS"></i>
+  </a>
+  
+
+  
+  <a class="item" href="mailto:AlexShao20050425@163.com">
+    <i class="large mail icon" title="Email"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+    <a class="item" href="https://github.com/ashao0425" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  
+    <a class="item" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1959796501&amp;site=qq&amp;menu=yes" target="_blank">
+      <i class="large qq icon" title="QQ"></i>
+    </a>
+  
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </article>
+    
+  </div>
+
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    
+    <div class="ui segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search something? (*￣3￣)╭ Press esc to exit" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/toshikis-miscellany.xyz\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: false,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+    
+
+    
+
+    <script>
+  window.background = "/background/back1.jpg"
+  window.defaultDark =  null 
+  window.backgroundDark = "/background/BackgroundBlack.jpg"
+  window.backgroundImageDark = "/background/BackgroundBlack.jpg"
+  window.darkNav =  true 
+  window.maxTags =  null 
+  window.hasTwitterEmbed =  null 
+  window.fixedNav =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"></script>
+
+<script>
+  format()
+
+  function format() {
+    $('span[data-format="luxon"]').each(function () {
+      var date = $(this).text()
+
+      $(this).text(luxon.DateTime.fromISO(date, { locale: "en" }).toFormat("yyyy/MM/dd"))
+    })
+  }
+</script>
+
+
+
+<script src="/js/scrollToTop.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/clojure.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/ocaml.min.js"></script>
+
+
+
+<script>
+  hljs.highlightAll()
+  setHighlightTheme()
+
+  function setHighlightTheme() {
+    var isDark = localStore.getItem('hugo-theme-dream-is-dark')
+    isDark = isDark ? isDark : window.defaultDark ? 'y' : isDark
+
+    var lightTheme = "tomorrow"
+    var darkTheme = "tomorrow-night"
+    var theme = isDark === 'y' ? darkTheme : lightTheme
+
+    $('link[data-highlight]').attr('href', 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/' + theme + '.min.css')
+    $('pre').css('background', isDark === 'y' ? '#333' : '')
+  }
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1"></script>
+<script src="/js/post.js" defer></script>
+
+
+    
+    <script src="/js/custom.js"></script>
+    
+
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-206749728-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+	
+    <div id="landlord">
+      <canvas id="live2d" width="300" height="250" class="live2d"></canvas>
+    </div>
+    
+	
+    <script type="text/javascript">
+      var message_Path = '/live2d/'
+      var home_Path = 'https://ashao0425.github.io/'  
+    </script>
+    <script type="text/javascript" src="/live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="/live2d/js/message.js"></script>
+    <script type="text/javascript">
+      loadlive2d("live2d", "/live2d/pio/model.json");
+    </script>
+  </body>
+
+  
+  
+  
+  
+	
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="/js/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+  
+</html>

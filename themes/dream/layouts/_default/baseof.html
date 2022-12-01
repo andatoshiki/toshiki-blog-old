@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ block "title" . }} {{- T "home" -}} {{ end }} | {{ .Site.Title }}</title>
+
+    {{ partial "head.html" . }}
+
+    {{ block "css" . }} {{ end }}
+
+    {{ range .Site.Params.Advanced.customCSS }}
+    <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{ end }}
+    
+    <link href="https://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js"></script>
+
+    <script src="/js/copy-to-clipboard.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <link  href="/css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="/js/jquery.fancybox.min.js"></script>
+    <!--
+    <script>
+      jQuery(document).ready(function ($) {
+        $("a[href*='douban']").each(function () {
+          var _this = $(this);
+          var str = _this.attr("href");
+          var db_reg = /^https\:\/\/(movie|book)\.douban\.com\/subject\/([0-9]+)\/?/;
+          if (db_reg.test(str)) {
+            var db_type = str.replace(db_reg, "$1");
+            var db_id = str.replace(db_reg, "$2").toString();
+            var db_api = "https://bm.weajs.com/api/";
+            if (db_type == 'movie') {
+              var url = db_api + "movies/" + db_id + "/";
+              $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: "json",
+                success: function (data) {
+                  var db_star = Math.ceil(data.rating);
+                  $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><h4 class='post-preview--title'><a target='_blank' href='" + str + "'>《" + data.title + "》</a></h4><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating + "</div></div><time class='post-preview--date'>导演：" + data.directors + " / 类型：" + data.genres + " / " + data.pubdate + "</time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.intro + "</section></div></div><img class='post-preview--image' src=" + data.cover + "></div>").replaceAll(_this)
+                }
+              });
+            } else if (db_type == 'book') {
+              var url = db_api + "books/" + db_id;
+              $.ajax({
+                url: url,
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                  var db_star = Math.ceil(data.rating);
+                  $("<div class='post-preview'><div class='post-preview--meta'><div class='post-preview--middle'><h4 class='post-preview--title'><a target='_blank' href='" + str + "'>《" + data.title + "》</a></h4><div class='rating'><div class='rating-star allstar" + db_star + "'></div><div class='rating-average'>" + data.rating + "</div></div><time class='post-preview--date'>作者：" + data.author + " </time><section style='max-height:75px;overflow:hidden;' class='post-preview--excerpt'>" + data.intro + "</section></div></div><img class='post-preview--image' src=" + data.cover + "></div>").replaceAll(_this)
+                }
+              });
+            } else {
+              console.log("出错" + id)
+            }
+          }
+        });
+      });
+    </script>
+  -->
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+          caption: function (fancybox, carousel, slide) {
+            return (
+              `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+            );
+          },
+        });
+  </script>
+	<!--Introducing css sheet for live2D-->
+    <link rel="stylesheet" href="/live2d/css/live2d.css" />
+
+  <!--Introducing APlayer css-->
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <link rel="stylesheet" href="/css/APlayer.dark.min.css">
+  <!-- require APlayer -->
+    <script src="/js/APlayer.min.js"></script>
+  <!-- require MetingJS -->
+    <script src="/js/Meting.min.js"></script>
+
+  <!--Require d3.js-->
+    <script src="/js/d3.min.js"></script>
+  <!--Require function plot.js-->
+    <script src="/js/function-plot.js"></script>
+  
+  <!--Custom Css Sheet-->
+    <link rel="stylesheet" href="/css/style.css">
+  
+  <!--Quizdown Plugin-->
+    <script src="/js/quizdown/quizdown.js"></script>
+    <script src="/js/quizdown/quizdownKatex.js"></script>
+    <script src="/js/quizdown/quizdownHighlight.js"></script>
+    <script>
+      quizdown.register(quizdownHighlight).register(quizdownKatex).init()
+    </script>
+
+  <!--Type effect js-->
+    <script src="/js/activate-power-mode.js"></script>
+    <script>
+      POWERMODE.colorful = true; // make power mode colorful
+      POWERMODE.shake = false; // turn off shake
+      document.body.addEventListener('input', POWERMODE);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
+    
+  </head>
+
+  <body class="default">
+    {{ partial "nav.html" . }}
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            {{ block "main" . }} {{ end }}
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              {{ if .Site.Params.siteStartYear }}
+              <p>© {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }} - {{ now.Year }}{{ end }} {{ .Site.Title }}</p>
+              {{ else }}
+              <p>© {{ now.Year }} {{ .Site.Title }}</p>
+              {{ end }}
+            
+            <!--Console Text Easter Egg-->
+            <script type="text/javascript"> 
+              if(window.console) {
+	              var cons = console; 
+	              if(cons) { 
+		              cons.group("Hey hey hey👀！");
+		              cons.info("👋🏻Hi there, YES IT'S YOU, watching my source code yea?！I'm watching you🖕🏻 https://ashao0425.github.io/"); 
+		              cons.log("%c俊樹's Miscellaneous", "background-image: linear-gradient(#063053, #395873, #5c7c99);font-size: 2rem;");
+		              cons.info("==============================Splitting Line==============================");
+		              cons.log("  █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗\n▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝\n▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗\n░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║\n░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝\n ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝\n ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░\n ░ ░    ░░░ ░ ░ ░        ░ ░░ ░\n          ░     ░ ░      ░  ░\n")
+		              cons.groupEnd();
+	              } 
+              }
+              </script>
+              
+			        <!--Site viewers statistic Js Integration by Busuanzi-->
+              <center>
+                <script async src="/js/busuanzi.pure.mini.js"></script>
+				        👀Site views: <span style="color:seagreen"><span id="busuanzi_value_site_pv"></span></span> times
+              </center>
+              
+			        <!--Site launched days timer Js Integration-->
+              <center>
+                👶Site age: <SPAN id=span_dt_dt style="color: #2E8B57;"></SPAN>
+                <SCRIPT language=javascript>
+                function show_date_time(){
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay=new Date("9/5/2021 02:14:49");
+                today=new Date();
+                timeold=(today.getTime()-BirthDay.getTime());
+                sectimeold=timeold/1000
+                secondsold=Math.floor(sectimeold);
+                msPerDay=24*60*60*1000
+                e_daysold=timeold/msPerDay
+                daysold=Math.floor(e_daysold);
+                e_hrsold=(e_daysold-daysold)*24;
+                hrsold=Math.floor(e_hrsold);
+                e_minsold=(e_hrsold-hrsold)*60;
+                minsold=Math.floor((e_hrsold-hrsold)*60);
+                seconds=Math.floor((e_minsold-minsold)*60);
+                span_dt_dt.innerHTML=""+daysold+" "+"days"+" "+hrsold+" "+"hours"+" "+minsold+" "+"minutes"+" "+seconds+" "+"seconds";
+                }
+                show_date_time();
+                </SCRIPT>
+              </center>
+              
+              <!--
+			          <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p> 
+              -->
+              {{ if .Site.Params.footerBottomText }}
+              <p>{{ .Site.Params.footerBottomText | safeHTML }}</p>
+              {{ end }}
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            {{ partial "back.html" . }}
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    {{ if .Site.Params.enableSearch }}
+    {{ partial "search.html" . }}
+    {{ end }}
+
+    {{ range .Site.Params.Advanced.customJSBefore }}
+    <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{ partial "footer.html" . }}
+    {{ block "js" . }} {{ end }}
+
+    {{ range .Site.Params.Advanced.customJS }}
+    <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{ if .Site.GoogleAnalytics }}
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+
+	<!--Setting up live2D moduel into page-->
+    <div id="landlord">
+      <canvas id="live2d" width="300" height="250" class="live2d"></canvas>
+    </div>
+    
+	<!--Integrating live 2d Js into page-->
+    <script type="text/javascript">
+      var message_Path = '/live2d/'
+      var home_Path = 'https://ashao0425.github.io/'  // Edit the domain into yours here
+    </script>
+    <script type="text/javascript" src="/live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="/live2d/js/message.js"></script>
+    <script type="text/javascript">
+      loadlive2d("live2d", "/live2d/pio/model.json");
+    </script>
+  </body>
+
+  <!-- Snowfall background effect Js integration for webpage
+    <script type="text/javascript" src="/js/snow.js"></script>
+  -->
+  
+  <!-- Mouse Emoji Clicking Effect
+	  <script type="text/javascript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("😁","😜","😋","😀","😂","😉","😄","🤤","🤣","😝","😛","😏");
+            var $i = $("<span></span>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+            y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+            });
+            $("body").append($i);
+            $i.animate({
+                "top": y - 180,
+                "opacity": 0
+            },
+            1500,
+            function() {
+                $i.remove();
+            });
+        });
+    });
+    </script>
+	-->
+  
+	<!--Webpage Color-Pop Mouse Clicking Effect JS integration-->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="/js/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+  <!--
+    <script>
+      var stop, staticx; var img = new Image(); img.src = "https://gitee.com/SAquarius/PICGO/raw/master/img/cherry.png"; function Sakura(x, y, s, r, fn) { this.x = x; this.y = y; this.s = s; this.r = r; this.fn = fn; }
+Sakura.prototype.draw = function (cxt) {
+  cxt.save(); var xc = 30 * this.s / 4; cxt.translate(this.x, this.y); cxt.rotate(this.r); cxt.drawImage(img, 0, 0, 25 * this.s, 25 * this.s)
+  cxt.restore();
+}
+Sakura.prototype.update = function () { this.x = this.fn.x(this.x, this.y); this.y = this.fn.y(this.y, this.y); this.r = this.fn.r(this.r); if (this.x > window.innerWidth || this.x < 0 || this.y > window.innerHeight || this.y < 0) { this.r = getRandom('fnr'); if (Math.random() > 0.4) { this.x = getRandom('x'); this.y = 0; this.s = getRandom('s'); this.r = getRandom('r'); } else { this.x = window.innerWidth; this.y = getRandom('y'); this.s = getRandom('s'); this.r = getRandom('r'); } } }
+SakuraList = function () { this.list = []; }
+SakuraList.prototype.push = function (sakura) { this.list.push(sakura); }
+SakuraList.prototype.update = function () { for (var i = 0, len = this.list.length; i < len; i++) { this.list[i].update(); } }
+SakuraList.prototype.draw = function (cxt) { for (var i = 0, len = this.list.length; i < len; i++) { this.list[i].draw(cxt); } }
+SakuraList.prototype.get = function (i) { return this.list[i]; }
+SakuraList.prototype.size = function () { return this.list.length; }
+function getRandom(option) {
+  var ret, random; switch (option) {
+      case 'x': ret = Math.random() * window.innerWidth; break; case 'y': ret = Math.random() * window.innerHeight; break; case 's': ret = Math.random(); break; case 'r': ret = Math.random() * 6; break; case 'fnx': random = -0.5 + Math.random() * 1; ret = function (x, y) { return x + 0.5 * random - 1.7; }; break; case 'fny': random = 1.5 + Math.random() * 0.7
+          ret = function (x, y) { return y + random; }; break; case 'fnr': random = Math.random() * 0.03; ret = function (r) { return r + random; }; break;
+  }
+  return ret;
+}
+function startSakura() {
+  requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame || window.oRequestAnimationFrame; var canvas = document.createElement('canvas'), cxt; staticx = true; canvas.height = window.innerHeight; canvas.width = window.innerWidth; canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;'); canvas.setAttribute('id', 'canvas_sakura'); document.getElementsByTagName('body')[0].appendChild(canvas); cxt = canvas.getContext('2d'); var sakuraList = new SakuraList(); for (var i = 0; i < 25; i++) { var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny; randomX = getRandom('x'); randomY = getRandom('y'); randomR = getRandom('r'); randomS = getRandom('s'); randomFnx = getRandom('fnx'); randomFny = getRandom('fny'); randomFnR = getRandom('fnr'); sakura = new Sakura(randomX, randomY, randomS, randomR, { x: randomFnx, y: randomFny, r: randomFnR }); sakura.draw(cxt); sakuraList.push(sakura); }
+  stop = requestAnimationFrame(function () { cxt.clearRect(0, 0, canvas.width, canvas.height); sakuraList.update(); sakuraList.draw(cxt); stop = requestAnimationFrame(arguments.callee); })
+}
+window.onresize = function () { var canvasSnow = document.getElementById('canvas_snow'); }
+img.onload = function () { startSakura(); }
+function stopp() { if (staticx) { var child = document.getElementById("canvas_sakura"); child.parentNode.removeChild(child); window.cancelAnimationFrame(stop); staticx = false; } else { startSakura(); } }
+  </script>
+-->
+</html>

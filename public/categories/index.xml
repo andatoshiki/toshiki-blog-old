@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/categories/</link>
+    <description>Recent content in Categories on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Mon, 18 Oct 2021 09:22:23 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial</title>
+      <link>https://toshikis-miscellany.xyz/categories/tutorial/</link>
+      <pubDate>Mon, 18 Oct 2021 09:22:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://toshikis-miscellany.xyz/categories/website/</link>
+      <pubDate>Sun, 05 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Calculus</title>
+      <link>https://toshikis-miscellany.xyz/categories/calculus/</link>
+      <pubDate>Sun, 05 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Game</title>
+      <link>https://toshikis-miscellany.xyz/categories/game/</link>
+      <pubDate>Sun, 05 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/game/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>https://toshikis-miscellany.xyz/categories/css/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miscellany</title>
+      <link>https://toshikis-miscellany.xyz/categories/miscellany/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/categories/miscellany/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

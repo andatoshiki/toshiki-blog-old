@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Js on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/tags/js/</link>
+    <description>Recent content in Js on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sun, 26 Sep 2021 03:36:36 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Tutorial) Download Pornhub Videos with Violentmonkey 😏</title>
+      <link>https://toshikis-miscellany.xyz/posts/pornhub-download/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/pornhub-download/</guid>
+      <description>&lt;p&gt;&lt;em&gt;You must had the experience of watching Pornhub without logging in, and you SUDDENLY see a good video that fits you, but just next time you can&amp;rsquo;t find it, the fast yet useful solution to this is to download the video at once. No more to say, you use Pornhub, we buddies 😏.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Random Variable and Expectation_</title>
+      <link>https://toshikis-miscellany.xyz/posts/algorithm/</link>
+      <pubDate>Sun, 26 Sep 2021 03:36:36 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/algorithm/</guid>
+      <description>Discrete Random Variables and Expectations Start off with an example, using the most normal element we would use in fundamental probability to explain combinations and outcomes in an event, two die. With this two dice we will have 36 possible outcomes. Let $(a, b)$ denote a possible outcome of rolling the two die, with the number on the top of the first die and b the number on the top of the second die.</description>
+    </item>
+    
+    <item>
+      <title>(Website) The best way of integrating MathJax Js in to Hugo for LaTeX math typing</title>
+      <link>https://toshikis-miscellany.xyz/posts/mathjax-support/</link>
+      <pubDate>Sun, 05 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/mathjax-support/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Using MathJax on Hugo has always been a huge problem from framework to inline math, this article will give you the clearest solution for integrating MathJax Js into Hugo based blog sites&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>(Website) Hugo Blog Mouse Clicking Effects</title>
+      <link>https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/</link>
+      <pubDate>Sun, 05 Sep 2021 04:24:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/hugo-blog-mouse-clicking-effect/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Have you ever seen a mouse clicking effect on certain websites? Read this article to get the most specific tutorial of mose clicking effect on hugo-based blog and others.&lt;/em&gt; 😏&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>HTML Runner Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/html-runner-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/html-runner-demo/</guid>
+      <description>&lt;p&gt;Html Runner Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Donut C JS Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/donutc-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/donutc-demo/</guid>
+      <description>&lt;p&gt;Donut C in Js Demo&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Slid Recaptcha Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/slide-recaptcha-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/slide-recaptcha-demo/</guid>
+      <description>&lt;p&gt;Slide recaptcha Demo&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscellany on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/categories/miscellany/</link>
+    <description>Recent content in Miscellany on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Wed, 01 Sep 2021 02:14:49 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/categories/miscellany/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Donut C JS Demo</title>
+      <link>https://toshikis-miscellany.xyz/posts/donutc-demo/</link>
+      <pubDate>Wed, 01 Sep 2021 02:14:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/donutc-demo/</guid>
+      <description>&lt;p&gt;Donut C in Js Demo&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

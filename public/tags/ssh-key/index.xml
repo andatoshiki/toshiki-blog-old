@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH Key on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/tags/ssh-key/</link>
+    <description>Recent content in SSH Key on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Tue, 07 Sep 2021 10:22:23 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/tags/ssh-key/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Github) Setting up SSH key on GitHub</title>
+      <link>https://toshikis-miscellany.xyz/posts/github&#43;ssh-key/</link>
+      <pubDate>Tue, 07 Sep 2021 10:22:23 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/github&#43;ssh-key/</guid>
+      <description>&lt;p&gt;&lt;em&gt;By setting up SSH keys on github, it svaes the time on coding from typing in usernames and passwords for pushing projects to repos! 😎&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

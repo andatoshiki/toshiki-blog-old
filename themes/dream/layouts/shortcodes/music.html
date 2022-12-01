@@ -1,0 +1,13 @@
+
+{{- $scratch := .Page.Scratch.Get "scratch" -}}
+    {{- if .Get "url" -}}
+        <meting-js url="{{ .Get `url` }}" name="{{ .Get `name` }}" artist="{{ .Get `artist` }}" cover="{{ .Get `cover` }}" theme="{{ .Get `theme` | default `#2980b9` }}"
+        {{- with .Get "fixed" }} fixed="{{ . }}"{{ end -}}
+        {{- with .Get "mini" }} mini="{{ . }}"{{ end -}}
+        {{- with .Get "autoplay" }} autoplay="{{ . }}"{{ end -}}
+        {{- with .Get "volume" }} volume="{{ . }}"{{ end -}}
+        {{- with .Get "mutex" }} mutex="{{ . }}"{{ end -}}
+        ></meting-js>
+
+    {{- end -}}
+{{- $scratch.Set "music" true -}}

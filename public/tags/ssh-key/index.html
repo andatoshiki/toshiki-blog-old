@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SSH Key | 俊樹&#39;s Miscellaneous</title>
+
+    
+<link href="/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+
+<meta name="author" content="安田俊樹" />
+<meta name="description" content="Although he prefer mathmatic-related course..." />
+
+
+
+<meta name="generator" content="Hugo 0.81.0" />
+
+<link rel="canonical" href="https://toshikis-miscellany.xyz/tags/ssh-key/" />
+
+
+<meta property="og:title" content="SSH Key" />
+<meta property="og:description" content="Although he prefer mathmatic-related course..." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://toshikis-miscellany.xyz/tags/ssh-key/" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSH Key"/>
+<meta name="twitter:description" content="Although he prefer mathmatic-related course..."/>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/css/OverlayScrollbars.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css">
+<link rel="stylesheet" href="/css/site.css" />
+
+<style>
+  .ui.header a:not(.item, .ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.item, .ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+  .inverted a:not(.item, .ui.button) {
+     color: darkseagreen !important;
+  }
+  
+
+  
+  body.default {
+    
+    background-color: ZgotmplZ;
+    
+
+    
+    background-image: url(/background/back1.jpg);
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: ZgotmplZ;
+    
+
+    
+    background-image: url(/background/BackgroundBlack.jpg);
+    
+  }
+  
+</style>
+
+
+<script>
+  document.addEventListener('visibilitychange',function(){
+      if( document.visibilityState == 'hidden' ){
+      normal_title = document.title;
+      document.title = 'w(ﾟДﾟ)w Ugh, site crashed！';
+      }else{
+      document.title = '(/▽＼) Yay, Site got fixed！';
+      setTimeout(function(){
+          document.title = normal_title;
+      }, 1200)
+      }
+  });
+</script>
+
+
+
+     
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    
+    <meta name="referrer" content="never">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <link  href="/css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="/js/jquery.fancybox.min.js"></script>
+    
+    <script>
+      Fancybox.bind('[data-fancybox="gallery"]', {
+          caption: function (fancybox, carousel, slide) {
+            return (
+              `${slide.index + 1} / ${carousel.slides.length} <br />` + slide.caption
+            );
+          },
+        });
+  </script>
+	
+    <link rel="stylesheet" href="/live2d/css/live2d.css" />
+
+  
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <link rel="stylesheet" href="/css/APlayer.dark.min.css">
+  
+    <script src="/js/APlayer.min.js"></script>
+  
+    <script src="/js/Meting.min.js"></script>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+  
+    <script src="/js/d3.min.js"></script>
+  
+    <script src="/js/function-plot.js"></script>
+  
+  
+    <link rel="stylesheet" href="/css/style.css">
+  
+  
+    <script src="/js/quizdown/quizdown.js"></script>
+    <script src="/js/quizdown/quizdownKatex.js"></script>
+    <script src="/js/quizdown/quizdownHighlight.js"></script>
+    <script>
+      quizdown.register(quizdownHighlight).register(quizdownKatex).init()
+    </script>
+
+  
+    <script src="/js/activate-power-mode.js"></script>
+    <script>
+      POWERMODE.colorful = true; 
+      POWERMODE.shake = false; 
+      document.body.addEventListener('input', POWERMODE);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.js"></script>
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu dream-nav">
+
+  <a class="item dream-flip-toggle" title="Flip it!">
+    <i class="large link bullseye icon"></i>
+  </a>
+  <a class="item" href="https://toshikis-miscellany.xyz/" title="Home">
+    <i class="large link home icon"></i>
+  </a>
+  
+  <a class="item" onclick="themeSwitch(event)">
+    <i class="large link icon theme-switch"></i>
+  </a>
+  
+  
+  <a class="item" title="Search something? (*￣3￣)╭ Press esc to exit" onclick="toggleSearch(event)">
+    <i class="large link search icon"></i>
+  </a>
+  <a class="item" href="/game/game.html" title="Game">
+    <i class="large link icon game"></i>
+  </a>
+  <a class="item" href="/game/game2.html" title="Game">
+    <i class="large link icon fire"></i>
+  </a>
+  <a class="item" href="/friends/" title="Friend links">
+    <i class="large link icon user"></i>
+  </a>
+  <a class="item" href="http://toshikis-miscellany.xyz/" title="Friend links">
+    <i class="large link icon heart"></i>
+  </a>
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+
+<header class="ui basic very padded segment dream-header">
+  
+  <div class="ui small circular image">
+    <img src="/avatar/Avatar3.jpg" alt="avatar" />
+  </div>
+  
+
+  
+
+  
+  
+  
+
+  <div class="content">
+    <h1 class="ui medium header">俊樹&#39;s Miscellaneous<span class="sub header"><div id="binft"></div><script>var binft=function(t){function r(){return f[Math.floor(Math.random()*f.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(t){for(var n=document.createDocumentFragment(),i=0;t>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=r(),n.appendChild(l)}return n}function i(){var r=a[c.skillI];c.step?c.step--:(c.step=o,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<r.length?(c.text+=r[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=g):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%a.length,c.direction="forward")),t.textContent=c.text,t.appendChild(n(c.prefixP<l.length?Math.min(b,b+c.prefixP):Math.min(b,r.length-c.skillP))),setTimeout(i,d)}var l="",a=["Lover of Mathematics and Science."].map(function(t){return t+""}),g=2,o=1,b=5,d=75,f=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-b,skillI:0,skillP:0,direction:"forward",delay:g,step:o};i()};binft(document.getElementById("binft"));</script></span>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="Archives"></i>
+      </a>
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+          <div class="dream-tags">
+          
+          
+          
+            <a class="ui label" href="/tags/bash/" title="Bash">
+              Bash
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/browsers/" title="Browsers">
+              Browsers
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/c/" title="C">
+              C
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/chrome/" title="Chrome">
+              Chrome
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/code/" title="Code">
+              Code
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/css/" title="Css">
+              Css
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/design/" title="Design">
+              Design
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/download/" title="Download">
+              Download
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/extension/" title="Extension">
+              Extension
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/game/" title="Game">
+              Game
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/git/" title="Git">
+              Git
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/github/" title="Github">
+              Github
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/gravity/" title="Gravity">
+              Gravity
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/html/" title="Html">
+              Html
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/hugo/" title="Hugo">
+              Hugo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/js/" title="Js">
+              Js
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/latex/" title="LaTeX">
+              LaTeX
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathematics/" title="Mathematics">
+              Mathematics
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathjax/" title="MathJax">
+              MathJax
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/picgo/" title="Picgo">
+              Picgo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/pornhub/" title="Pornhub">
+              Pornhub
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/ssh-key/" title="SSH Key">
+              SSH Key
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/tutorial/" title="Tutorial">
+              Tutorial
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/violentmonkey/" title="Violentmonkey">
+              Violentmonkey
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/website/" title="Website">
+              Website
+            </a>
+          
+          </div>
+    
+
+    
+  </div>
+
+  
+  <script src="/js/sweetalert.min.js"></script> 
+  <link rel="stylesheet" href="/css/sweetalert.css" type='text/css' media='all' />
+</header>
+
+<script>document.body.oncopy = function() {swal("Copied successfully！", "If you would you like to use this site, please attribute or indicate the source if authorized！","success");};</script>
+
+<div class="ui relaxed grid dream-grid">
+  
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://toshikis-miscellany.xyz/posts/github&#43;ssh-key/">
+    
+    <img src="/post4/cover.png" alt="(Github) Setting up SSH key on GitHub" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/posts/github&#43;ssh-key/">(Github) Setting up SSH key on GitHub</a>
+    </h2>
+    <div class="meta">
+      <p class="date">
+        
+          <span data-format="luxon">2021-09-07T10:22:23&#43;08:00</span>
+        
+      </p>
+    </div>
+    <div class="description">
+      <p><em>By setting up SSH keys on github, it svaes the time on coding from typing in usernames and passwords for pushing projects to repos! 😎</em></p>
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/avatar/Avatar3.jpg" alt="avatar" />安田俊樹</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>5 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+
+  
+</div>
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2020 - 2021 俊樹&#39;s Miscellaneous</p>
+              
+            
+            
+            <script type="text/javascript"> 
+              if(window.console) {
+	              var cons = console; 
+	              if(cons) { 
+		              cons.group("Hey hey hey👀！");
+		              cons.info("👋🏻Hi there, YES IT'S YOU, watching my source code yea?！I'm watching you🖕🏻 https://ashao0425.github.io/"); 
+		              cons.log("%c俊樹's Miscellaneous", "background-image: linear-gradient(#063053, #395873, #5c7c99);font-size: 2rem;");
+		              cons.info("==============================Splitting Line==============================");
+		              cons.log("  █████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗\n▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝\n▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗\n░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║\n░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝\n ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝\n ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░\n ░ ░    ░░░ ░ ░ ░        ░ ░░ ░\n          ░     ░ ░      ░  ░\n")
+		              cons.groupEnd();
+	              } 
+              }
+              </script>
+              
+			        
+              <center>
+                <script async src="/js/busuanzi.pure.mini.js"></script>
+				        👀Site views: <span style="color:seagreen"><span id="busuanzi_value_site_pv"></span></span> times
+              </center>
+              
+			        
+              <center>
+                👶Site age: <SPAN id=span_dt_dt style="color: #2E8B57;"></SPAN>
+                <SCRIPT language=javascript>
+                function show_date_time(){
+                window.setTimeout("show_date_time()", 1000);
+                BirthDay=new Date("9/5/2021 02:14:49");
+                today=new Date();
+                timeold=(today.getTime()-BirthDay.getTime());
+                sectimeold=timeold/1000
+                secondsold=Math.floor(sectimeold);
+                msPerDay=24*60*60*1000
+                e_daysold=timeold/msPerDay
+                daysold=Math.floor(e_daysold);
+                e_hrsold=(e_daysold-daysold)*24;
+                hrsold=Math.floor(e_hrsold);
+                e_minsold=(e_hrsold-hrsold)*60;
+                minsold=Math.floor((e_hrsold-hrsold)*60);
+                seconds=Math.floor((e_minsold-minsold)*60);
+                span_dt_dt.innerHTML=""+daysold+" "+"days"+" "+hrsold+" "+"hours"+" "+minsold+" "+"minutes"+" "+seconds+" "+"seconds";
+                }
+                show_date_time();
+                </SCRIPT>
+              </center>
+              
+              
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  
+  <div class="ui small circular image">
+    <img src="/avatar/Avatar3.jpg" alt="avatar" />
+  </div>
+  
+
+  
+
+  
+  
+  
+
+  <div class="content">
+    <h1 class="ui medium header">俊樹&#39;s Miscellaneous<span class="sub header"><div id="binft"></div><script>var binft=function(t){function r(){return f[Math.floor(Math.random()*f.length)]}function e(){return String.fromCharCode(94*Math.random()+33)}function n(t){for(var n=document.createDocumentFragment(),i=0;t>i;i++){var l=document.createElement("span");l.textContent=e(),l.style.color=r(),n.appendChild(l)}return n}function i(){var r=a[c.skillI];c.step?c.step--:(c.step=o,c.prefixP<l.length?(c.prefixP>=0&&(c.text+=l[c.prefixP]),c.prefixP++):"forward"===c.direction?c.skillP<r.length?(c.text+=r[c.skillP],c.skillP++):c.delay?c.delay--:(c.direction="backward",c.delay=g):c.skillP>0?(c.text=c.text.slice(0,-1),c.skillP--):(c.skillI=(c.skillI+1)%a.length,c.direction="forward")),t.textContent=c.text,t.appendChild(n(c.prefixP<l.length?Math.min(b,b+c.prefixP):Math.min(b,r.length-c.skillP))),setTimeout(i,d)}var l="",a=["Lover of Mathematics and Science."].map(function(t){return t+""}),g=2,o=1,b=5,d=75,f=["rgb(110,64,170)","rgb(150,61,179)","rgb(191,60,175)","rgb(228,65,157)","rgb(254,75,131)","rgb(255,94,99)","rgb(255,120,71)","rgb(251,150,51)","rgb(226,183,47)","rgb(198,214,60)","rgb(175,240,91)","rgb(127,246,88)","rgb(82,246,103)","rgb(48,239,130)","rgb(29,223,163)","rgb(26,199,194)","rgb(35,171,216)","rgb(54,140,225)","rgb(76,110,219)","rgb(96,84,200)"],c={text:"",prefixP:-b,skillI:0,skillP:0,direction:"forward",delay:g,step:o};i()};binft(document.getElementById("binft"));</script></span>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="Archives"></i>
+      </a>
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+          <div class="dream-tags">
+          
+          
+          
+            <a class="ui label" href="/tags/bash/" title="Bash">
+              Bash
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/browsers/" title="Browsers">
+              Browsers
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/c/" title="C">
+              C
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/chrome/" title="Chrome">
+              Chrome
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/code/" title="Code">
+              Code
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/css/" title="Css">
+              Css
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/design/" title="Design">
+              Design
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/download/" title="Download">
+              Download
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/extension/" title="Extension">
+              Extension
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/game/" title="Game">
+              Game
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/git/" title="Git">
+              Git
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/github/" title="Github">
+              Github
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/gravity/" title="Gravity">
+              Gravity
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/html/" title="Html">
+              Html
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/hugo/" title="Hugo">
+              Hugo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/js/" title="Js">
+              Js
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/latex/" title="LaTeX">
+              LaTeX
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathematics/" title="Mathematics">
+              Mathematics
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/mathjax/" title="MathJax">
+              MathJax
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/picgo/" title="Picgo">
+              Picgo
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/pornhub/" title="Pornhub">
+              Pornhub
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/ssh-key/" title="SSH Key">
+              SSH Key
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/tutorial/" title="Tutorial">
+              Tutorial
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/violentmonkey/" title="Violentmonkey">
+              Violentmonkey
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/website/" title="Website">
+              Website
+            </a>
+          
+          </div>
+    
+
+    
+  </div>
+
+  
+  <script src="/js/sweetalert.min.js"></script> 
+  <link rel="stylesheet" href="/css/sweetalert.css" type='text/css' media='all' />
+</header>
+
+<script>document.body.oncopy = function() {swal("Copied successfully！", "If you would you like to use this site, please attribute or indicate the source if authorized！","success");};</script>
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment markdown-body">
+      <div class="ui medium header">Bio 👋</div>
+      <ul>
+<li><strong>👨Names</strong>:
+<ul>
+<li>English: Alex Shao</li>
+<li>中文: 邵宪辉</li>
+<li>日本語：安田俊樹</li>
+</ul>
+</li>
+<li><strong>👀Age</strong>: 16, 2005/4/25</li>
+<li><strong>🏫School</strong>: SLAS (shittiest school ever)</li>
+<li><strong>❤️Interests</strong>: Python, Html, Java, Js, Anime(especially &ldquo;ダンジョンに出会いを求めるのは間違っているだろうか&rdquo;), Math, Science, Sleep, Diarreah &amp; Constipation (Well, I had stomache issue since I was born, innate), bikes</li>
+<li><strong>🚩Nationality</strong>: Chinese &amp; Japanese (Microsoft somehow does not support country flag emojis&hellip;)</li>
+<li><strong>💼Occupation</strong>: Student</li>
+<li><strong>📺Movies</strong>: No movies, animes only, &ldquo;ダンジョンに出会いを求めるのは間違っているだろうか&rdquo;</li>
+<li><strong>📫Email</strong>: <a href="mailto:alex2005@gmail.com">alex2005@gmail.com</a></li>
+<li><strong>👨‍🏫Values</strong>: Constrain impetuosity</li>
+<li><strong>🐧QQ</strong>: 1959796501 (Also contact my QQ besides mail)</li>
+<li><strong>💻Device</strong>: Huawei Matebook 14, 2019</li>
+<li><strong>🖱️IDE</strong>: VsCode</li>
+</ul>
+<style type="text/css">.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:#444;background:#e7f2fa}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:#fff;background:#6ab0de}.notice.warning .notice-title{background:rgba(217,83,79,.9)}.notice.warning{background:#fae2e2}.notice.info .notice-title{background:#f0b37e}.notice.info{background:#fff2db}.notice.note .notice-title{background:#6ab0de}.notice.note{background:#e7f2fA}.notice.tip .notice-title{background:rgba(92,184,92,.8)}.notice.tip{background:#e6f9e6}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:0.125em;position:relative}</style>
+<div><svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg"><symbol id="tip-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"/></symbol><symbol id="note-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="warning-notice" viewBox="0 0 576 512" preserveAspectRatio="xMidYMid meet"><path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"/></symbol><symbol id="info-notice" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></symbol></svg></div><div class="notice warning" >
+<p class="first notice-title"><span class="icon-notice baseline"><svg><use href="#warning-notice"></use></svg></span>Warning</p><p>This is a warning notice. Be warned!</p></div>
+
+
+    </article>
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment markdown-body">
+      <div class="ui medium header">Acknowledgments</div>
+      <ul>
+<li><strong>Vansh Kamleshbhai Padaliya</strong>: Always helping and assisting with no doubts and hesitations, good buddy, known for 3 years.</li>
+<li><strong>吴思萌 Mónica</strong>: An elder sister, always accompanying and encouraging, deskmate in previous school, known for 5 years.</li>
+<li><strong>姚轶膑</strong>: Great buddy as well, spent time screwing out often, always encouraging, known for 5 years.</li>
+<li><strong>Koki Kin</strong>: Typical Japanese Otaku, still a great buddy, known for 1.5 years, giving help when I need.</li>
+<li><strong>Semih Deli</strong>: Known since 2, developed this site together.</li>
+<li>All the others people who answered my requests I pulled on Github when I met problems.</li>
+</ul>
+
+    </article>
+  </div>
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <div class="ui medium header">Social Links</div>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <a class="item" href="/index.xml">
+    <i class="large rss square icon" title="RSS"></i>
+  </a>
+  
+
+  
+  <a class="item" href="mailto:AlexShao20050425@163.com">
+    <i class="large mail icon" title="Email"></i>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+    <a class="item" href="https://github.com/ashao0425" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  
+    <a class="item" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1959796501&amp;site=qq&amp;menu=yes" target="_blank">
+      <i class="large qq icon" title="QQ"></i>
+    </a>
+  
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+    <article class="ui segment">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    </article>
+    
+  </div>
+
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    
+    <div class="ui segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search something? (*￣3￣)╭ Press esc to exit" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/toshikis-miscellany.xyz\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: false,
+      })
+    })
+  })
+</script>
+<script src="/js/search.js"></script>
+    
+
+    
+
+    <script>
+  window.background = "/background/back1.jpg"
+  window.defaultDark =  null 
+  window.backgroundDark = "/background/BackgroundBlack.jpg"
+  window.backgroundImageDark = "/background/BackgroundBlack.jpg"
+  window.darkNav =  true 
+  window.maxTags =  null 
+  window.hasTwitterEmbed =  null 
+  window.fixedNav =  true 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@1.13.1/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"></script>
+
+<script>
+  format()
+
+  function format() {
+    $('span[data-format="luxon"]').each(function () {
+      var date = $(this).text()
+
+      $(this).text(luxon.DateTime.fromISO(date, { locale: "en" }).toFormat("yyyy/MM/dd"))
+    })
+  }
+</script>
+
+
+
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/grid.js"></script>
+
+
+    
+    <script src="/js/custom.js"></script>
+    
+
+    
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-206749728-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+
+	
+    <div id="landlord">
+      <canvas id="live2d" width="300" height="250" class="live2d"></canvas>
+    </div>
+    
+	
+    <script type="text/javascript">
+      var message_Path = '/live2d/'
+      var home_Path = 'https://ashao0425.github.io/'  
+    </script>
+    <script type="text/javascript" src="/live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="/live2d/js/message.js"></script>
+    <script type="text/javascript">
+      loadlive2d("live2d", "/live2d/pio/model.json");
+    </script>
+  </body>
+
+  
+  
+  
+  
+	
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="/js/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+  
+</html>

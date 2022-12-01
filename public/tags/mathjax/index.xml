@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MathJax on 俊樹&#39;s Miscellaneous</title>
+    <link>https://toshikis-miscellany.xyz/tags/mathjax/</link>
+    <description>Recent content in MathJax on 俊樹&#39;s Miscellaneous</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;Creative Commons License&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;This work is licensed under a &lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sun, 05 Sep 2021 06:59:49 +0800</lastBuildDate><atom:link href="https://toshikis-miscellany.xyz/tags/mathjax/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>(Website) The best way of integrating MathJax Js in to Hugo for LaTeX math typing</title>
+      <link>https://toshikis-miscellany.xyz/posts/mathjax-support/</link>
+      <pubDate>Sun, 05 Sep 2021 06:59:49 +0800</pubDate>
+      
+      <guid>https://toshikis-miscellany.xyz/posts/mathjax-support/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Using MathJax on Hugo has always been a huge problem from framework to inline math, this article will give you the clearest solution for integrating MathJax Js into Hugo based blog sites&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
